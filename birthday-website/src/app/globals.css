@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+@layer utilities {
+  .bg-background {
+    background-color: #a2d2ff; /* Replace with your color */
+  }
+}
+@layer utilities {
+  .text-foreground {
+    color: #333333; /* Replace with your desired color */
+  }
+}
