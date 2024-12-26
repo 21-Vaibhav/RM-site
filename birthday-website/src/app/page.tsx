@@ -1,6 +1,7 @@
 // src/app/page.tsx
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Heart, Music, Gift, Calendar } from "lucide-react";
 import { LoadingSection } from "@/components/sections/LoadingSection";
@@ -95,7 +96,7 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center p-6 md:p-8">
         <div className="text-center space-y-10">
           <div className="w-64 h-64 md:w-72 md:h-72 mx-auto rounded-full border-4 border-blue-300 overflow-hidden shadow-2xl animate-float">
-            <img
+            <Image
               src="/images/birthday-cat.jpeg"
               alt="Birthday cat"
               className="w-full h-full object-cover"
@@ -116,7 +117,7 @@ export default function Home() {
       {/* Music Section */}
       <section className="min-h-screen flex items-center justify-center relative p-6">
         {/* Background Image */}
-        <img
+        <Image
           src="/images/music-cat.jpeg" // Adjust the path to your background image
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
@@ -129,7 +130,7 @@ export default function Home() {
             Scan the playlist below!
           </h2>
           <div className="bg-black p-6 rounded-xl shadow-lg">
-            <img
+            <Image
               src="/images/spotify-code.jpg"
               alt="Spotify Code"
               className="w-full max-w-[300px] mx-auto"
@@ -241,7 +242,7 @@ export default function Home() {
               }
             >
               <div className="absolute inset-0 bg-blue-100">
-                <img
+                <Image
                   src={memory.image}
                   alt={memory.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
